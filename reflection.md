@@ -1,4 +1,4 @@
-[Visit My Page](byronbenjamin.github.io)
+[Visit My Page](http://byronbenjamin.github.io/index.html)
 
 
 **What did you learn about CSS padding, borders, and margin by doing this challenge?**
