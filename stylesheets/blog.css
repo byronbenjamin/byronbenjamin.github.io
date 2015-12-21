@@ -1,0 +1,20 @@
+main {
+  margin-top: 20px;
+}
+
+h1, h2, h4 {
+  text-align: center;
+  font-family: Arvo, serif;
+  margin: -3px 0 -3px 0;
+}
+
+h4 {
+  margin-top: 8px;
+}
+
+section {
+  margin: 25px 35px 0 35px;
+  font-family: Arvo, serif;
+  text-align: block;
+}
+
