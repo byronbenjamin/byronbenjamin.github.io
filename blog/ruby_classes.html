@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+      <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic|Arvo:400,400italic|Satisfy|Bad+Script' rel='stylesheet' type='text/css'>
+      <title>Byron Gage</title>
+  </head>
+  <body>
+    <header>
+
+      <p class="welcome"> welcome to the homepage of</p>
+      <p class="my-name"><strong>Byron Gage</strong></p>
+
+
+  </header>
+    <hr class="divider"></hr>
+    <nav>
+      <ul>
+        <li><a href="byronbenjamin.github.io/about.html">About Me</a></li> |
+        <li><a href="/blog/index.html">Blog</a></li> |
+        <li><a href="#">Projects</a></li> |
+        <li><a href="byronbenjamin.github.io/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="blog-links">
+      <ul>
+        <li><a href="/blog/git.html">Blog #1</a></li> |
+        <li><a href="/blog/css-concepts.html">Blog #2</a></li> |
+        <li><a href="/blog/arrays-hashes.html">Blog #3</a></li> |
+        <li><a href="/blog/enumerable-methods.html">Blog #4</a></li> |
+        <li><a href="/blog/ruby_classes.html">Blog #5</a></li> |
+        <li><a href="#">Blog #6</a></li> |
+        <li><a href="#">Blog #7</a></li>
+      </ul>
+    </section>
+      <main>
+        <h1>Blog #5 </h1>
+        <h2>Week 6</h2>
+        <h4>January 17, 2016</h4>
+
+        <section>
+          <p>Let&#39;s talk about Ruby classes. Ruby is an object-oriented programming language. Everything in Ruby is an object. In Ruby we use classes to help us create objects.
+          </p>
+
+          <p>Classes are the formula, the blueprint, and the ingredients that make up an object.   Each instance of a class is a new object. So if we create a class Cars, we can create new car objects using that class and its methods.
+          </p>
+
+          <code>Class Car <br>
+
+          def initialize(make, year, color)<br>
+            @make = make<br>
+            @year = year<br>
+            @color = color<br>
+          end<br>
+          <br>
+          def make<br>
+            @make<br>
+          end<br>
+          <br>
+          def year<br>
+            @year<br>
+          end<br>
+          <br>
+          def color<br>
+            @color<br>
+          end<br>
+
+          end<br>
+          </code>
+
+          <p>This is our Car Class. The first thing you have to do to make a Class is write Class and Name it. The first letter of the Class should be capitalized as seen with the Class Car. You then close it out with “end”, the same way you would do a method.
+          </p>
+
+          <p>In the inside of the class we have 4 methods. The methods initialize, make, year, and color are created on the inside. The initialize method takes 3 arguments and set up the basic characteristics for your newly created Car object. The 3 arguments are then set to instance variables. Instance variable are variables that can be called anywhere within the class. To set an instance variable you have to use the &#34;@&#34; symbol followed by variable&#39;s name. Then you set that variable to equal something. Above we set @make to equal the make argument, we set @year to equal the year argument, and we set @color to equal the color argument. The purpose of using instance variables in this class is so that we can access them in the make, year, and color methods. If they were not set as instance variables the other methods in the class wouldn’t recognize them. </p>
+
+          <p>So now that we have our Class Car all set up we can start making new car objects. To do this we can do something like this:
+          </p>
+
+          <code>car_one = Car.new(&#34;Chevy&#34;, 2016, &#34;Blue&#34;)</code>
+
+          <p>We set a variable car_one to create a instance of Car with the make=Chevy, the year=2016, and color=Blue. The initialize method within the class then takes each variable and set them to a instance variable. The initialize method is called whenever a new Car object is created. The initialize method does not need to be called.
+          </p>
+
+          <p>We now have a new object named car_one. Because it is an instance of the Car Class we can now call the methods created within that class. The methods created in the class returns the feature of that new car object when called, nothing too fancy. We would call the methods as followed:
+          </p>
+
+          <code>car_one.make = Chevy<br>
+          car_one.year = 2016<br>
+          car_one.color = Blue<br>
+          </code>
+
+          <p>This was just a basic look at Ruby classes. Now that we have the Class Car we can easily create new Car objects over and over.  We can create a whole fleet of cars. You can create more methods within the Class Car to help you manage that fleet. The possibilities are endless.
+          </p>
+      </section>
+    </main>
+  </body>
+
+  <footer>
+    <hr class="divider"></hr>
+    <ul class="footer-nav">
+      <li><a href="https://github.com/byronbenjamin">GitHub</a></li> |
+      <li><a href="byronbenjamin.chi@gmail.com">Mail</a></li> |
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+</html>
