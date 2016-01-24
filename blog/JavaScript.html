@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+      <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+      <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+      <link href='https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic|Arvo:400,400italic|Satisfy|Bad+Script' rel='stylesheet' type='text/css'>
+      <title>Byron Gage</title>
+  </head>
+  <body>
+    <header>
+
+      <p class="welcome"> welcome to the homepage of</p>
+      <p class="my-name"><strong>Byron Gage</strong></p>
+
+
+  </header>
+    <hr class="divider"></hr>
+    <nav>
+      <ul>
+        <li><a href="/about.html">About Me</a></li> |
+        <li><a href="/blog/index.html">Blog</a></li> |
+        <li><a href="#">Projects</a></li> |
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="blog-links">
+      <ul>
+        <li><a href="/blog/git.html">Blog #1</a></li> |
+        <li><a href="/blog/css-concepts.html">Blog #2</a></li> |
+        <li><a href="/blog/arrays-hashes.html">Blog #3</a></li> |
+        <li><a href="/blog/enumerable-methods.html">Blog #4</a></li> |
+        <li><a href="/blog/ruby_classes.html">Blog #5</a></li> |
+        <li><a href="/blog/JavaScript.html">Blog #6</a></li> |
+        <li><a href="#">Blog #7</a></li>
+      </ul>
+    </section>
+      <main>
+        <h1>Blog #6 </h1>
+        <h2>Week 7</h2>
+        <h4>January 23, 2016</h4>
+
+        <section>
+          <p>
+            This week in DBC we moved on to JavaScript. During this week&#39;s assignments and readings I noticed that some of the things I saw in Ruby are similar to things I saw in JavaScript. One thing that stuck out was the Ruby hash and its similarities with the JavaScript Object.
+          </p>
+          <p>
+           In this week&#39;s blog I will take a look at both and show their similarities and there differences. How they are created and how they can be manipulated.
+          </p>
+          <p>
+           Lets first start with a basic example of both.
+          </p>
+          <code>
+            <strong>Ruby Hash:</strong><br>
+            <br>
+            grocery_list = {  <br>
+
+            "eggs" => 2, <br>
+            "bread" => 3, <br>
+            "milk" => 1   <br>
+            } <br>
+            <br>
+            <strong>JavaScript Object:</strong><br>
+            <br>
+            var groceryList = {  <br>
+
+            eggs: 2,   <br>
+            bread: 3,   <br>
+            milk: 1,   <br>
+            };<br>
+          </code>
+          <p>
+            Okay, let&#39;s look at the similarities and the differences. The similarities are that they are structured the same. They both contain the same keys and values. The differences are the way they are written and the way the key and values are declared. They both contain eggs with the quantity 2, bread with the quantity of 3 and milk with the quantity 1.
+          </p>
+          <p>
+            Starting from the top of each data structure we see that the ruby hash is declared by entering grocery_list with its key and value pairs written between curly brackets. The JavaScript object has to be declared with the keyword “var” first, then the objects name, groceryList, and then its key and value pairs store in between curly brackets.
+          </p>
+          <p>
+            The key and value pairs are declared differently in both data structures. In the ruby hash the key is a string and it is assigned a value using the hash rocket(=>). In the JavaScript object the key is written with a colon to assign the value. The values can be written as strings in quotes but the colon needs to be there. The colon sets the value just as the hash rocket sets the value in ruby. The semi colon at the end of the object states that it&#39;s completed.
+          </p>
+          <p>
+            So those are the similarities and differences between the Ruby hash and the JavaScript object. Ruby hashes can be set similar to the way that the JavaScript key and value pairs are set. You can declare a ruby hash as followed:
+          </p>
+          <code>
+            <strong>Ruby Hash:</strong> <br>
+            <br>
+            grocery_list = {  <br>
+
+            eggs:  2,  <br>
+            bread:  3, <br>
+            milk:  1   <br>
+            }<br>
+          </code>
+        <p>
+          The way the key and value pairs are set up are the same as the JavaScript object above. The difference is that the keys are no longer strings they are now symbols.
+        </p>
+        <p>
+        Now lets look at a couple way to build Ruby Hashes and JavaScript objects.
+        </p>
+        <code>
+          <strong>Ruby Hash</strong>
+          <br>
+          grocery_list = {}<br>
+          <br>
+          or<br>
+          <br>
+          grocery_list = Hash.new<br>
+          <br>
+          <br>
+          <strong>JavaScript Object</strong> <br>
+          <br>
+          var groceryList = {};<br>
+          <br>
+          or<br>
+          <br>
+          var groceryList = new Object();<br>
+          <br>
+        </code>
+        <p>
+          Above are examples of how a Hash and a Object can be constructed. They can both be set to equal curly brackets or written like the latter example of both. The examples set the ruby hash grocery_list to equal a blank hash and the JavaScript object to equal a blank object.
+        </p>
+        <p>
+          Now that we have a blank object and hash we can now start to add keys and values to them.
+        </p>
+        <code>
+          <strong>Ruby</strong>
+          <br>
+          grocery_list = {}<br>
+          <br>
+          grocery_list[&#39;eggs&#39;] = 2<br>
+          grocery_list[&#39;bread&#39;] = 3<br>
+          grocery_list[&#39;milk&#39;] = 1<br>
+          </code>
+        <p>
+          Final hash will look like the hash we started with in the beginning.
+        </p>
+
+        <code>
+          grocery_list = {<br>
+
+          "eggs" => 2,<br>
+          "bread" => 3,<br>
+          "milk" => 1<br>
+          }<br>
+          <br>
+          </code>
+
+          <code>
+          <strong>JavaScript</strong><br>
+          var groceryList = {}<br>
+          <br>
+          groceryList.eggs = 2;<br>
+          groceryList.bread = 3;<br>
+          groceryList.milk = 1;<br>
+        </code>
+        <p>The final object will look like the object we started with in the beginning.
+        </p>
+
+        <code>
+          var groceryList = { <br>
+
+          eggs: 2,<br>
+          bread: 3, <br>
+          milk: 1, <br>
+          };<br>
+        </code>
+        <p>So there you have it. This was just a quick look a 2 different data structures from 2 different programming languages, the JavaScript Object and the Ruby Hash. They look similar and they are both used the same by their respective languages. The difference is the way they are declared. From the examples we saw above Ruby lists the name of the hash and uses the hash rocket when declaring keys and values.  JavaScript has to use the keyword var then the name. It then sets it key and value pairs by stating the key then a colon and then the value of that pair.
+        </p>
+        <p>
+        This is all I have this week. Thanks for reading.
+        </p>
+
+
+
+
+
+      </section>
+    </main>
+  </body>
+
+  <footer>
+    <hr class="divider"></hr>
+    <ul class="footer-nav">
+      <li><a href="https://github.com/byronbenjamin">GitHub</a></li> |
+      <li><a href="byronbenjamin.chi@gmail.com">Mail</a></li> |
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+  </footer>
+</html>
